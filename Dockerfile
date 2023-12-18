@@ -2,7 +2,7 @@ FROM python:3.11
 
 WORKDIR /flask-app
 
-COPY requirement.txt requirement.txt
+COPY requirement.txt .
 RUN pip install -r requirement.txt
 
 COPY . .
